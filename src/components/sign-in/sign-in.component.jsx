@@ -27,11 +27,9 @@ class SignIn extends Component {
     }
 
     handleChange = event => {
-        console.log(this.state)
         const { name, value } = event.target;
 
         this.setState({ [name]: value })
-        console.log(this.state)
     }
 
     render() {
@@ -59,7 +57,7 @@ class SignIn extends Component {
                         required
                     />
                     <div className="buttons">
-                        <CustomButton type="button">Sign In</CustomButton>
+                        <CustomButton type="submit">Sign In</CustomButton>
                         <CustomButton onClick={signInWithGoogle} isGoogleSignIn>Sign In with Google</CustomButton>
                     </div>                    
                 </form>
